@@ -3,8 +3,10 @@ require_relative 'agent'
 require_relative 'null_agent'
 
 class Processor
-  def initialize(obj)
-    obj.rules
+  class << self
+    def process(item)
+      item.rules
+    end
   end
 end
 
@@ -14,8 +16,8 @@ membership = Product::Membership.new
 stove = Product::Stove.new
 digital_item = Product::Digital.new
 
-Processor.new(book_with_agent)
-Processor.new(book)
-Processor.new(membership)
-Processor.new(stove)
-Processor.new(digital_item)
+Processor.process(book_with_agent)
+Processor.process(book)
+Processor.process(membership)
+Processor.process(stove)
+Processor.process(digital_item)

@@ -6,4 +6,8 @@ class Agent
   def process
     ["Sending #{@commission_percentage}% commission to the agent."]
   end
+
+  def name
+    ['(sold by agent)']
+  end
 end

@@ -1,5 +1,4 @@
 class Agent
-
   def initialize(commission_percentage)
     @commission_percentage = commission_percentage
   end

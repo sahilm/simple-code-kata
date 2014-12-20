@@ -1,5 +1,5 @@
 class NullAgent
-  def rules
+  def process
     []
   end
 end

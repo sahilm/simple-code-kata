@@ -4,7 +4,7 @@ class Agent
     @commission_percentage = commission_percentage
   end
 
-  def rules
+  def process
     ["Sending #{@commission_percentage}% commission to the agent."]
   end
 end

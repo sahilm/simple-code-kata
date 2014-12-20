@@ -4,25 +4,25 @@ module Product
       @agent = agent
     end
 
-    def rules
-      ['Printing mailing label.'] + @agent.rules
+    def process
+      ['Printing mailing label.'] + @agent.process
     end
   end
 
   class Membership
-    def rules
+    def process
       ['Upgrading the user to “pro” account.']
     end
   end
 
   class Digital
-    def rules
+    def process
       ['Sending email to download digital items.']
     end
   end
 
   class Stove
-    def rules
+    def process
       ['Printing “safety instructions”']
     end
   end

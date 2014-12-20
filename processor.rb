@@ -6,11 +6,11 @@ class Processor
   end
 end
 
-book = BookItem::Book.new
-book_agent = BookWithAgentItem::BookWithAgent.new
-membership = MembershipItem::Membership.new
-stove = StoveItem::Stove.new
-digital_item = DigitalItem::Digital.new
+book = Product::Book.new
+book_agent = Product::BookWithAgent.new
+membership = Product::Membership.new
+stove = Product::Stove.new
+digital_item = Product::Digital.new
 
 Processor.new(book)
 Processor.new(book_agent)

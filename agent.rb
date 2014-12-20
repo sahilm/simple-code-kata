@@ -5,6 +5,6 @@ class Agent
   end
 
   def rules
-    puts "Sending #{@commission_percentage}% commission to the agent."
+    ["Sending #{@commission_percentage}% commission to the agent."]
   end
 end

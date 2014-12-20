@@ -5,7 +5,7 @@ require_relative 'null_agent'
 class Processor
   class << self
     def process(item)
-      item.rules
+      puts item.rules
     end
   end
 end

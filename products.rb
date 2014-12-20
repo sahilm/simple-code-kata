@@ -6,7 +6,7 @@ module Product
 
     def rules
       puts 'Printing mailing label.'
-      @agent.rules if @agent
+      @agent.rules
     end
   end
 

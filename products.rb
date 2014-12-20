@@ -1,13 +1,12 @@
 module Product
   class Book
+    def initialize(agent)
+      @agent = agent
+    end
+
     def rules
       puts 'Printing mailing label.'
-    end
-  end
-
-  class BookWithAgent
-    def rules
-      puts 'Sending commission to the agent.'
+      @agent.rules if @agent
     end
   end
 

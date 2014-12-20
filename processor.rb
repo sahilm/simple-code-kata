@@ -1,4 +1,6 @@
 require_relative 'products'
+require_relative 'agent'
+require_relative 'null_agent'
 
 class Processor
   def initialize(obj)
@@ -6,14 +8,14 @@ class Processor
   end
 end
 
-book = Product::Book.new
-book_agent = Product::BookWithAgent.new
+book_with_agent = Product::Book.new(Agent.new(10))
+book = Product::Book.new(NullAgent.new)
 membership = Product::Membership.new
 stove = Product::Stove.new
 digital_item = Product::Digital.new
 
+Processor.new(book_with_agent)
 Processor.new(book)
-Processor.new(book_agent)
 Processor.new(membership)
 Processor.new(stove)
 Processor.new(digital_item)

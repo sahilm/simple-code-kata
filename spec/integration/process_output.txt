@@ -1,0 +1,16 @@
+Processing Book (sold by agent)
+Printing mailing label.
+Sending 10% commission to the agent.
+
+Processing Book
+Printing mailing label.
+
+Processing Membership
+Upgrading the user to “pro” account.
+
+Processing Stove
+Printing “safety instructions”
+
+Processing Digital
+Sending email to download digital items.
+

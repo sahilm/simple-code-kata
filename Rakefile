@@ -4,7 +4,15 @@ Rake::TestTask.new('spec:unit') do |t|
   t.pattern = 'spec/unit/**/*_spec.rb'
 end
 
-task default: 'spec:unit'
+Rake::TestTask.new('spec:integration') do |t|
+  t.pattern = 'spec/integration/**/*_spec.rb'
+end
+
+Rake::TestTask.new('spec') do |t|
+  t.pattern = 'spec/**/*_spec.rb'
+end
+
+task default: 'spec'
 
 desc 'Process products'
 task :process do

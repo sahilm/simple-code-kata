@@ -1,5 +1,4 @@
-require 'minitest/autorun'
-require_relative '../lib/agent'
+require_relative 'spec_helper'
 
 describe Agent do
   it 'should provide its name' do

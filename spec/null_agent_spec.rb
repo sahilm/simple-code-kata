@@ -1,5 +1,4 @@
-require 'minitest/autorun'
-require_relative '../lib/null_agent'
+require_relative 'spec_helper'
 
 describe NullAgent do
   it 'should return an empty name' do

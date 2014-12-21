@@ -1,11 +1,10 @@
 require 'rake/testtask'
 
-desc 'Run all Tests'
-Rake::TestTask.new('spec') do |t|
-  t.pattern = 'spec/**/*_spec.rb'
+Rake::TestTask.new('spec:unit') do |t|
+  t.pattern = 'spec/unit/**/*_spec.rb'
 end
 
-task default: :spec
+task default: 'spec:unit'
 
 desc 'Process products'
 task :process do
@@ -22,4 +21,3 @@ task :process do
   Processor.process(stove)
   Processor.process(digital_item)
 end
-

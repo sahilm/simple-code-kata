@@ -1,4 +1,4 @@
-require_relative 'spec_helper'
+require_relative '../../spec_helper'
 
 describe Product::Book do
   it 'should return its name' do
